@@ -1,0 +1,6 @@
+interface:
+  display_name: "Knowledge Base Manager"
+  short_description: "管理逐字稿、文稿、文档与跨行业知识资产"
+  default_prompt: "用 $transcript-knowledge-manager 直接管理当前知识库：先保护原始来源并还原完整逻辑，再区分事实、模型、SOP、话术和输出，更新机器索引并完成严格验证。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,20 @@
+{
+  "name": "knowledge-base-manager",
+  "interface": {
+    "displayName": "Knowledge Base Manager"
+  },
+  "plugins": [
+    {
+      "name": "knowledge-base-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/knowledge-base-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

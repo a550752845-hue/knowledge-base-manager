@@ -1,0 +1,4 @@
+SYNTHETIC FIXTURE - NO REAL PERSONAL DATA
+source_id: src-synth-queue-008
+
+When a fictional service queue exceeds its review capacity, pause new low-priority intake and preserve the reason for every deferred item.

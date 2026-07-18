@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "synthetic_fixture": true,
+  "contains_real_personal_data": false,
+  "roots": [
+    {
+      "knowledge_base_id": "general-operations",
+      "path": "roots/general",
+      "scope_type": "general",
+      "industries": [],
+      "responsibilities": [],
+      "sensitivity": "internal",
+      "status": "active"
+    },
+    {
+      "knowledge_base_id": "greenhouse-service",
+      "path": "roots/industry",
+      "scope_type": "industry",
+      "industries": ["controlled-environment-agriculture"],
+      "responsibilities": [],
+      "sensitivity": "internal",
+      "status": "active"
+    },
+    {
+      "knowledge_base_id": "customer-success",
+      "path": "roots/responsibility",
+      "scope_type": "responsibility",
+      "industries": [],
+      "responsibilities": ["customer-success"],
+      "sensitivity": "internal",
+      "status": "active"
+    },
+    {
+      "knowledge_base_id": "unrelated-lunar-project",
+      "path": "roots/unrelated-project",
+      "scope_type": "project",
+      "industries": ["fictional-space-research"],
+      "responsibilities": ["payload-operations"],
+      "sensitivity": "restricted",
+      "status": "active"
+    }
+  ]
+}

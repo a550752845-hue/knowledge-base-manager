@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "synthetic_fixture": true,
+  "contains_real_personal_data": false,
+  "roots": [
+    {
+      "knowledge_base_id": "public-service-principles",
+      "path": "roots/public",
+      "scope_type": "general",
+      "industries": [],
+      "responsibilities": [],
+      "sensitivity": "public",
+      "access": "allowed",
+      "status": "active"
+    },
+    {
+      "knowledge_base_id": "internal-support-operations",
+      "path": "roots/internal",
+      "scope_type": "responsibility",
+      "industries": [],
+      "responsibilities": ["customer-support"],
+      "sensitivity": "internal",
+      "access": "allowed-for-adaptation",
+      "status": "active"
+    },
+    {
+      "knowledge_base_id": "restricted-project",
+      "path": "roots/restricted",
+      "scope_type": "project",
+      "industries": ["synthetic-cloud-service"],
+      "responsibilities": ["incident-response"],
+      "sensitivity": "restricted",
+      "access": "denied-for-this-task",
+      "status": "active"
+    }
+  ]
+}

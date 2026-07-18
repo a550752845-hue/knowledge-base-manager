@@ -1,0 +1,62 @@
+name: Bug 报告
+description: 报告可复现的错误、回归或错误结果
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: 请先确认问题不包含私密知识库内容、访问令牌或个人信息。
+
+  - type: input
+    id: version
+    attributes:
+      label: 版本
+      description: 请填写 plugin manifest 版本或 Git commit。
+    validations:
+      required: true
+
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: 操作系统
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 最小复现步骤
+      description: 使用合成数据说明调用方式、命令和输入结构。
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期行为
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际行为
+      description: 可附去敏后的错误输出。
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已移除真实客户数据、私有路径、密钥和令牌。
+          required: true
+        - label: 我已搜索现有 Issue，未找到相同问题。
+          required: true

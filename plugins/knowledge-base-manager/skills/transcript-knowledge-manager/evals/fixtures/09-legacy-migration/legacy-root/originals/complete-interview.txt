@@ -1,0 +1,12 @@
+SYNTHETIC FIXTURE - NO REAL PERSONAL DATA
+Legacy source label: interview-alpha
+
+[00:00-00:45] The fictional operations team says handoffs fail when the next action has no role owner.
+
+[00:45-01:40] The speaker proposes recording state, evidence, next action, and role owner as four separate fields. The speaker calls this a practical rule, not an independently verified fact.
+
+[01:40-02:30] A counterexample shows that adding a role owner does not help when the evidence path is inaccessible. Access must be checked before handoff.
+
+[02:30-03:10] The conclusion is conditional: use the four-field handoff only when the receiving role can access the cited evidence; otherwise route to access repair first.
+
+[03:10-03:30] Action intent: pilot the method on one synthetic queue and record failures before promoting it.

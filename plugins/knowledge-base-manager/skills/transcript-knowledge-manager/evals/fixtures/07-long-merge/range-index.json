@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "synthetic_fixture": true,
+  "contains_real_personal_data": false,
+  "source_id": "src-synth-ordered-reminders-007",
+  "title": "合成长文：提醒次数与不确定性",
+  "coverage": "complete",
+  "ordered_ranges": [
+    {
+      "range_id": "r01",
+      "path": "r01-opening.md",
+      "previous": null,
+      "next": "r02",
+      "anchor": "sections-1-2"
+    },
+    {
+      "range_id": "r02",
+      "path": "r02-mechanism.md",
+      "previous": "r01",
+      "next": "r03",
+      "anchor": "sections-3-4"
+    },
+    {
+      "range_id": "r03",
+      "path": "r03-counterexample.md",
+      "previous": "r02",
+      "next": "r04",
+      "anchor": "sections-5-6"
+    },
+    {
+      "range_id": "r04",
+      "path": "r04-conclusion.md",
+      "previous": "r03",
+      "next": null,
+      "anchor": "sections-7-8"
+    }
+  ]
+}

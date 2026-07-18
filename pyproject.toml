@@ -1,0 +1,18 @@
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+extend-exclude = [".release-smoke"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+
+[tool.coverage.run]
+branch = true
+source = ["plugins/knowledge-base-manager/skills/transcript-knowledge-manager/scripts"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+
+[tool.coverage.xml]
+output = "coverage.xml"

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/a550752845-hue/knowledge-base-manager/knowledge-base-manifest.schema.json",
+  "title": "Knowledge Base Manager root manifest",
+  "type": "object",
+  "required": ["schema_version", "knowledge_base_id", "name", "scope", "paths", "role_paths", "source_roots", "freshness_policy"],
+  "properties": {
+    "schema_version": {"const": 3},
+    "knowledge_base_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+    "name": {"type": "string", "minLength": 1},
+    "scope": {
+      "type": "object",
+      "required": ["type", "industries", "responsibilities"],
+      "properties": {
+        "type": {"enum": ["general", "industry", "responsibility", "cross-domain", "project"]},
+        "industries": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "responsibilities": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      }
+    },
+    "paths": {
+      "type": "object",
+      "required": ["ai_entry", "asset_index", "management_rules", "recent_context", "source_registry_human", "source_registry_machine", "maintenance_log"],
+      "additionalProperties": {"type": "string", "minLength": 1}
+    },
+    "role_paths": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {"type": "string", "minLength": 1}
+    },
+    "source_roots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "mode"],
+        "properties": {"path": {"type": "string", "minLength": 1}, "mode": {"const": "read-only"}}
+      }
+    },
+    "freshness_policy": {
+      "type": "object",
+      "required": ["high_days", "medium_days", "low_days"],
+      "properties": {
+        "high_days": {"type": "integer", "minimum": 1},
+        "medium_days": {"type": "integer", "minimum": 1},
+        "low_days": {"type": "integer", "minimum": 1}
+      }
+    }
+  },
+  "additionalProperties": true
+}

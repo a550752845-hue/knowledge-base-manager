@@ -1,0 +1,31 @@
+{
+  "schema_version": 3,
+  "synthetic_fixture": true,
+  "knowledge_base_id": "customer-success",
+  "name": "Synthetic Customer Success",
+  "scope": {
+    "type": "responsibility",
+    "industries": [],
+    "responsibilities": ["customer-success"]
+  },
+  "paths": {
+    "ai_entry": "00-AI-entry/AI-first-read.md",
+    "asset_index": "00-AI-entry/asset-index.jsonl",
+    "management_rules": "_meta/management-rules.md",
+    "recent_context": "_meta/recent-context.md",
+    "source_registry_human": "_meta/source-registry.md",
+    "source_registry_machine": "_meta/source-registry.jsonl",
+    "maintenance_log": "_meta/maintenance-log.md"
+  },
+  "sensitivity": "internal",
+  "role_paths": {
+    "execution": "40-assets",
+    "management": "_meta"
+  },
+  "source_roots": [],
+  "freshness_policy": {
+    "high_days": 30,
+    "medium_days": 180,
+    "low_days": 3650
+  }
+}

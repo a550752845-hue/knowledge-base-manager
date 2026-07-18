@@ -1,0 +1,32 @@
+{
+  "schema_version": 3,
+  "synthetic_fixture": true,
+  "knowledge_base_id": "unrelated-lunar-project",
+  "name": "Synthetic Restricted Lunar Project",
+  "scope": {
+    "type": "project",
+    "industries": ["fictional-space-research"],
+    "responsibilities": ["payload-operations"]
+  },
+  "paths": {
+    "ai_entry": "00-AI-entry/AI-first-read.md",
+    "asset_index": "00-AI-entry/asset-index.jsonl",
+    "management_rules": "_meta/management-rules.md",
+    "recent_context": "_meta/recent-context.md",
+    "source_registry_human": "_meta/source-registry.md",
+    "source_registry_machine": "_meta/source-registry.jsonl",
+    "maintenance_log": "_meta/maintenance-log.md"
+  },
+  "sensitivity": "restricted",
+  "access_policy": "not-authorized-for-this-eval",
+  "role_paths": {
+    "knowledge": "30-knowledge",
+    "management": "_meta"
+  },
+  "source_roots": [],
+  "freshness_policy": {
+    "high_days": 7,
+    "medium_days": 30,
+    "low_days": 365
+  }
+}

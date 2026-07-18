@@ -1,0 +1,39 @@
+{
+  "name": "knowledge-base-manager",
+  "version": "1.0.0",
+  "description": "Manage source-traceable Markdown and Obsidian knowledge bases with a Codex skill and deterministic local CLI.",
+  "author": {
+    "name": "chen",
+    "url": "https://github.com/a550752845-hue"
+  },
+  "homepage": "https://github.com/a550752845-hue/knowledge-base-manager",
+  "repository": "https://github.com/a550752845-hue/knowledge-base-manager",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "knowledge-base",
+    "obsidian",
+    "transcript",
+    "retrieval"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Knowledge Base Manager",
+    "shortDescription": "管理可追溯、可检索、可复用的知识库",
+    "longDescription": "将逐字稿、文稿、文档、网页和笔记整理为来源可追溯、机器可检索、可持续维护的 Markdown 或 Obsidian 知识库。",
+    "developerName": "chen",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/a550752845-hue/knowledge-base-manager",
+    "privacyPolicyURL": "https://github.com/a550752845-hue/knowledge-base-manager/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/a550752845-hue/knowledge-base-manager/blob/main/LICENSE",
+    "defaultPrompt": [
+      "用 $transcript-knowledge-manager 整理当前知识库",
+      "审计当前知识库的来源、索引和可复用资产",
+      "从这批逐字稿建立可追溯的知识库"
+    ]
+  }
+}
