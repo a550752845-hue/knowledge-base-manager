@@ -1,4 +1,4 @@
 coverage>=7.6,<8
 jsonschema>=4.20,<5
 PyYAML>=6.0,<7
-ruff>=0.11,<1
+ruff>=0.16.10,<1
